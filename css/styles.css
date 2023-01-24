@@ -7,8 +7,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: ##2e2f42;
-  background-color: #ffff;
+  color: #2e2f42;
   letter-spacing: 0.02em;
 }
 
@@ -19,6 +18,13 @@ body {
 /* другорядний колір фону #F4F4FD */
 
 .button {
+  background-color: #4d5ae5;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #404bbf;
+  cursor: pointer;
 }
 
 .logo {
@@ -47,12 +53,20 @@ body {
 .list {
   list-style: none;
 }
+/* address-nav */
+.address-nav .address-link {
+  color: var(--secondary-text-color);
 
-.address-nav a {
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 40;
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
 }
 
 /* site-nav */
@@ -67,13 +81,19 @@ body {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: rgb(180, 29, 29);
+  color: #4d5ae5;
 }
 
 /* hero */
+.hero {
+  background-color: #2e2f42;
+}
+
 .hero-title {
-  font-style: normal;
+  color: var(--prymary-bg-color);
+
   font-weight: 700;
+  font-style: normal;
   font-size: 1.07;
   line-height: 60px;
 
@@ -91,7 +111,7 @@ body {
   text-transform: capitalize;
 }
 
-.features-list .title .team-list .title {
+.features-list .title {
   color: var(--prymary-text-color);
 
   font-weight: 500;
@@ -99,9 +119,7 @@ body {
   line-height: 1.2;
 }
 
-.features-list .text 
-.team-list .text 
- {
+.features-list .text {
   color: var(--secondary-text-color);
 
   font-weight: 400;
@@ -110,21 +128,55 @@ body {
 }
 
 /* team */
+.team-list .title {
+  color: var(--prymary-text-color);
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.team-list .text {
+  color: var(--secondary-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
 
 /* footer */
+footer {
+  background-color: #2e2f42;
+}
 
-.text-color {
+.subject {
+  color: var(--prymary-bg-color);
+}
+
+.caption {
+  color: #E7E9FC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 /* page portfolio */
 .works .title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-  }
-  
-  .works .text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-  }
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.works .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.filter-list .item:hover,
+.filter-list .item:focus {
+  background-color: #404bbf;
+  color: var(--prymary-bg-color);
+  cursor: pointer;
+}
